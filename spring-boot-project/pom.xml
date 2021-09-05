@@ -13,6 +13,10 @@
 	<description>Spring Boot Project</description>
 	<properties>
 		<main.basedir>${basedir}/..</main.basedir>
+
+		<!--疑问，是放在这儿吗？？？-->
+		<disable.check>true</disable.check>
+
 	</properties>
 	<modules>
 		<module>spring-boot-dependencies</module>
