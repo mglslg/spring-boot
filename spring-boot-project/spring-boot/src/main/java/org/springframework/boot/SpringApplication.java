@@ -276,6 +276,7 @@ public class SpringApplication {
 
 	private Class<?> deduceMainApplicationClass() {
 		try {
+			//!slg 这用法很溜啊喂！怎么做到的？？
 			StackTraceElement[] stackTrace = new RuntimeException().getStackTrace();
 			for (StackTraceElement stackTraceElement : stackTrace) {
 				if ("main".equals(stackTraceElement.getMethodName())) {
@@ -670,6 +671,7 @@ public class SpringApplication {
 	}
 
 	/**
+	 * !slg 厉害了老铁，就是你！
 	 * Load beans into the application context.
 	 * @param context the context to load beans into
 	 * @param sources the sources to load

@@ -150,6 +150,7 @@ public class ServletWebServerApplicationContext extends GenericWebApplicationCon
 	protected void onRefresh() {
 		super.onRefresh();
 		try {
+			//!slg 创建web服务器入口(Tomcat/Jetty)
 			createWebServer();
 		}
 		catch (Throwable ex) {
